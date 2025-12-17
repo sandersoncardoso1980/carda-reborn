@@ -134,11 +134,11 @@ export const PublicMenu = () => {
                 <input
                   type="text"
                   placeholder="Buscar..."
-                  className="w-full pl-9 pr-4 py-2 rounded-full text-sm text-card-foreground bg-card/50 border border-border focus:ring-2 focus:ring-primary outline-none backdrop-blur-sm"
+                  className="w-full pl-9 pr-4 py-2 rounded-full text-sm text-black bg-white/90 border border-gray-300 focus:ring-2 focus:ring-primary outline-none"
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
                 />
-                <Icons.Search className="w-4 h-4 text-muted-foreground absolute left-3 top-2.5" />
+                <Icons.Search className="w-4 h-4 text-gray-600 absolute left-3 top-2.5" />
               </div>
             )}
           </div>
@@ -160,10 +160,10 @@ export const PublicMenu = () => {
             <span className="inline-block px-3 py-1 bg-primary text-primary-foreground text-xs font-bold rounded-full mb-3 tracking-wider animate-fade-in-up">
               ABERTO TODOS OS DIAS
             </span>
-            <h1 className="text-4xl md:text-6xl font-display text-card mb-2 drop-shadow-lg animate-fade-in-up [animation-delay:100ms]">
+            <h1 className="text-4xl md:text-6xl font-display text-white mb-2 drop-shadow-lg animate-fade-in-up [animation-delay:100ms]">
               O VERDADEIRO <br/><span className="text-primary">SABOR DO REI</span>
             </h1>
-            <p className="text-secondary text-sm md:text-lg max-w-md animate-fade-in-up [animation-delay:200ms]">
+            <p className="text-white/90 text-sm md:text-lg max-w-md animate-fade-in-up [animation-delay:200ms] font-medium bg-black/30 px-4 py-2 rounded-xl backdrop-blur-sm">
               Ingredientes selecionados, carne suculenta e molhos artesanais que você só encontra aqui.
             </p>
 
@@ -171,11 +171,11 @@ export const PublicMenu = () => {
               <input
                 type="text"
                 placeholder="O que você deseja comer hoje?"
-                className="w-full pl-12 pr-4 py-4 rounded-2xl text-card-foreground bg-card/10 border border-card/20 focus:bg-foreground/80 focus:ring-2 focus:ring-primary backdrop-blur-md shadow-2xl placeholder-secondary transition-all text-lg"
+                className="w-full pl-12 pr-4 py-4 rounded-2xl text-black bg-white/95 border border-white/30 focus:bg-white focus:ring-2 focus:ring-primary shadow-2xl placeholder-gray-600 transition-all text-lg"
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
               />
-              <Icons.Search className="w-6 h-6 text-primary absolute left-4 top-4" />
+              <Icons.Search className="w-6 h-6 text-gray-600 absolute left-4 top-4" />
             </div>
           </div>
         </div>
@@ -471,7 +471,7 @@ export const PublicMenu = () => {
           <div className="opacity-80 mb-6 transform scale-75 origin-center grayscale hover:grayscale-0 transition-all duration-500">
             <Logo />
           </div>
-          <p className="font-medium text-card">© 2024 King Burguer.</p>
+          <p className="font-medium text-card">© 2025 Sanderson Cardoso.</p>
           <p className="text-xs mt-2 opacity-50">Feito com 💛 e muito código.</p>
         </div>
       </footer>
