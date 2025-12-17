@@ -97,7 +97,7 @@ export const PublicMenu = () => {
 
     const phoneNumber = "5531991222846";
 
-    let message = `*🔥 PEDIDO KING BURGUER*\n`;
+    let message = `*🔥 PEDIDO PREMIUM BURGUER*\n`;
     message += `--------------------------------\n`;
     message += `👤 *Cliente:* ${customerName}\n`;
     message += `📍 *Local:* ${address}\n`;
