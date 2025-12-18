@@ -56,10 +56,7 @@ export const PublicMenu = () => {
       }
       return [...prev, { ...product, quantity: 1 }];
     });
-    toast({
-      title: "Adicionado ao carrinho!",
-      description: `${product.name} foi adicionado.`,
-    });
+   
   };
 
   const removeFromCart = (id: string) => {
@@ -97,7 +94,7 @@ export const PublicMenu = () => {
 
     const phoneNumber = "5531991222846";
 
-    let message = `*🔥 PEDIDO PREMIUM BURGUER*\n`;
+    let message = `*🔥 PEDIDO KING BURGUER*\n`;
     message += `--------------------------------\n`;
     message += `👤 *Cliente:* ${customerName}\n`;
     message += `📍 *Local:* ${address}\n`;
@@ -117,6 +114,7 @@ export const PublicMenu = () => {
 
     const encodedMessage = encodeURIComponent(message);
     window.open(`https://wa.me/${phoneNumber}?text=${encodedMessage}`, '_blank');
+    setCart([]);
   };
 
   return (
