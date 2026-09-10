@@ -143,16 +143,24 @@ export const PublicMenu = () => {
         </div>
       </header>
 
-      {/* Hero Section */}
+         {/* Hero Section */}
       <div className="relative h-[300px] md:h-[400px] w-full overflow-hidden">
         <div className="absolute inset-0 bg-foreground">
-          <img
-            src="https://images.unsplash.com/photo-1550547660-d9450f859349?q=80&w=2000&auto=format&fit=crop"
-            alt="Hero Burger"
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            poster="https://images.unsplash.com/photo-1550547660-d9450f859349?q=80&w=2000&auto=format&fit=crop"
             className="w-full h-full object-cover opacity-60"
-          />
+          >
+            <source src="/videos/hero3.mp4" type="video/mp4" />
+            <source src="/videos/hero.webm" type="video/webm" />
+            Seu navegador não suporta vídeo HTML5.
+          </video>
           <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-foreground/80"></div>
         </div>
+
         <div className="absolute bottom-0 left-0 right-0 p-6 md:p-12 flex flex-col items-center md:items-start pt-24">
           <div className="container mx-auto">
             <span className="inline-block px-3 py-1 bg-primary text-primary-foreground text-xs font-bold rounded-full mb-3 tracking-wider animate-fade-in-up">

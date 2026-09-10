@@ -79,7 +79,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     name: 'Coxinha de Frango',
     description: 'Coxinha crocante recheada com frango desfiado e catupiry. Unidade.',
     price: 8.50,
-    image: 'https://images.unsplash.com/photo-1632203171982-cc0df6e9ddbd?w=400&h=300&fit=crop',
+    image: '/images/coxinha.jpg',
     categoryId: '3',
     isAvailable: true,
   },
